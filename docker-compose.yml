@@ -1,0 +1,9 @@
+version: '2'
+services:
+  basic_express:
+    build:
+      context: ./
+    image: basic_express
+    container_name: basic_express
+    ports:
+      - "3000:3000" # public
