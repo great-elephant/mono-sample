@@ -20,3 +20,5 @@ export const createServer = (): Express => {
 
   return app;
 };
+// yarn build --filter=...[HEAD^] --dry-run=json
+// AFFECTED_APPS=$(yarn build --filter=...[HEAD^] --dry-run=json | jq -r '.packages | join(" ")')
